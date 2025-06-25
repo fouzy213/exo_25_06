@@ -4,7 +4,16 @@ export {};
 // Données de Départ
 // ========================================================================
 
-const data = {
+
+
+
+
+
+
+
+
+
+const data : MediaData = {
   books: [
     {
       title: "The Hobbit",
@@ -75,25 +84,15 @@ interface Book {
 
 interface Movie {
   title:string;
-  author:string;
+  director:string;
   year:number
 };
 
 interface Album {
   title:string;
-  author:string;
+  artist:string;
   year:number
 };
-
-
-
-
-
-
-
-
-
-
 
 // ========================================================================
 // Exercice 3 : Interface de l’Objet Global
@@ -106,6 +105,23 @@ interface Album {
 //    - albums : tableau de Album
 // 2. Typez la constante `data` contenant les données (plus haut dans le fichier)
 //    avec l’interface MediaData.
+
+
+interface MediaData{
+        books:Book[];
+        movies:Movie[];
+        albums:Album[];
+}
+
+
+
+
+
+
+
+
+
+
 
 // ========================================================================
 // Exercice 4 : Fonction d’Affichage Contextuel
