@@ -64,7 +64,7 @@ const data : MediaData = {
 
 const appName :string  = "Apple" ;
 const isOnline : boolean = false ;
-const maxItems : number = Number.MAX_VALUE;
+const maxItems : number = 18;
 
 
 // ========================================================================
@@ -115,14 +115,6 @@ interface MediaData{
 
 
 
-
-
-
-
-
-
-
-
 // ========================================================================
 // Exercice 4 : Fonction d’Affichage Contextuel
 // ========================================================================
@@ -130,6 +122,25 @@ interface MediaData{
 //
 // 1. Créez une fonction "displayItemDetails" qui accepte un objet de type
 //    Book, Movie ou Album (vous pouvez utiliser un type union).
+
+
+
+function displayItemDetails(item: Book | Movie| Album){
+
+
+if ('author' in item )
+console.log(`c'est un Book ${item}`)
+
+if ('director' in item)
+console.log(`c'est un film ${item}`)
+
+
+if ('artist' in item)
+console.log(`c'est un album ${item}`)
+
+}
+displayItemDetails
+
 // 2. La fonction doit afficher un message personnalisé selon le type d'objet.
 //    Exemples :
 //     - "Livre : The Hobbit par J.R.R. Tolkien (1937)"
