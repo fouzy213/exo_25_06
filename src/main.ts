@@ -67,6 +67,34 @@ const maxItems : number = Number.MAX_VALUE;
 // 2. Créez une interface "Movie" avec les propriétés correspondantes.
 // 3. Créez une interface "Album" avec les propriétés correspondantes.
 
+interface Book {
+  title:string;
+  author:string;
+  year:number
+};
+
+interface Movie {
+  title:string;
+  author:string;
+  year:number
+};
+
+interface Album {
+  title:string;
+  author:string;
+  year:number
+};
+
+
+
+
+
+
+
+
+
+
+
 // ========================================================================
 // Exercice 3 : Interface de l’Objet Global
 // ========================================================================
