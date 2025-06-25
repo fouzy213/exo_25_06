@@ -52,6 +52,12 @@ const data = {
 // 2. Créez une constante "isOnline" de type boolean indiquant si l'application est connectée.
 // 3. Créez une constante "maxItems" de type number représentant un maximum autorisé.
 
+
+const appName :string  = "Apple" ;
+const isOnline : boolean = false ;
+const maxItems : number = Number.MAX_VALUE;
+
+
 // ========================================================================
 // Exercice 2 : Interfaces des Objets
 // ========================================================================
